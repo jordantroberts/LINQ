@@ -10,7 +10,10 @@ namespace LINQ
         {
             var books = new Library().GetBooks();
 
-            var cheapBooks = books.Where(book => book.Price < 10).OrderBy(book => book.Title).Select(book => book.Title);
+            var cheapBooks = books
+                .Where(book => book.Price < 10)
+                .OrderBy(book => book.Title)
+                .Select(book => book.Title);
 
 
             foreach (var book in cheapBooks)
