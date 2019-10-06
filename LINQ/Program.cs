@@ -32,6 +32,18 @@ namespace LINQ
                 }
 
             }
+
+            var usersGroupedByAge = users.GroupBy(user => user.Age);
+
+            foreach (var group in usersGroupedByAge)
+            {
+                Console.WriteLine("Users aged " + group.Key + ":");
+
+                foreach(var user in group)
+                {
+                    Console.WriteLine("* " + user.Name);
+                }
+            }
             
         }
     }

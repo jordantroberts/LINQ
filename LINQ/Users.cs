@@ -13,7 +13,8 @@ namespace LINQ
                 new User() { Name = "Graham", City = "Manchester", Age = 56 },
                 new User() { Name = "Ben", City = "London", Age = 30 },
                 new User() { Name = "Hannah", City = "Tokyo", Age = 25 },
-                new User() { Name = "Ralph", City = "Brighton", Age = 4}
+                new User() { Name = "Ralph", City = "Brighton", Age = 4},
+                new User() { Name = "Christina", City = "Tokyo", Age = 30}
 
             };
         }
