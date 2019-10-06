@@ -12,13 +12,15 @@ namespace LINQ
 
             var cheapBooks = books
                 .Where(book => book.Price < 10)
-                .OrderBy(book => book.Title)
-                .Select(book => book.Title);
+                .OrderBy(book => book.Title);
 
-
+            Console.WriteLine("Books that are less than £10");
             foreach (var book in cheapBooks)
-                Console.WriteLine(book); 
-           
+                Console.WriteLine(book.Title + " £" + book.Price);
+
+            
+
+            
         }
     }
 }
